@@ -177,7 +177,7 @@ const Header: React.FC<HeaderProps> = ({
               onClick={handleClose}
               id="screen"
             >
-              <div className="w-[70%] fixed h-screen bg-[#e7e1e1c8] dark:bg-[#0e1116]/80 dark:bg-opacity-90 top-0 right-0 backdrop-blur-md">
+              <div className="w-[70%] fixed h-screen bg-[#f5f9f8d9] dark:bg-[#0e1116]/80 dark:bg-opacity-90 top-0 right-0 backdrop-blur-md">
                 <NavItems activeItem={activeItem} isMobile={true} />
                 <div className="flex md:hidden">
                   {userData ? (
