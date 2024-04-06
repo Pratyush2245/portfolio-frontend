@@ -32,9 +32,6 @@ const Page = (props: Props) => {
       <HomePage />
       <Skills />
       <HeroParallaxDemo />
-      <div className="absolute h-[200px] w-full flex-1 overflow-x-hidden z-[100000] blur-xl">
-        <div className="absolute bottom-[90%] -top-[10%] bg-black opacity-50 dark:opacity-100 left-0 -right-20 z-10" />
-      </div>
       <div className="mt-20">
         <Footer />
       </div>

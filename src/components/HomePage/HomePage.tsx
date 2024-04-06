@@ -31,7 +31,7 @@ const HomePage = ({}) => {
                 <HoverBorderGradient
                   containerClassName="rounded-full"
                   as="button"
-                  className="dark:bg-black bg-white text-black dark:text-white flex items-center space-x-2"
+                  className="bg-gradient-to-br from-slate-100 to-slate-400 dark:from-slate-600 dark:bg-slate-900 dark:hover:from-slate-700 dark:hover:to-slate-950 dark:text-white flex items-center space-x-2 text-foreground/90 hover:text-foreground hover:from-slate-100 hover:to-slate-500"
                 >
                   <span>Hire Me</span>
                 </HoverBorderGradient>
@@ -43,7 +43,7 @@ const HomePage = ({}) => {
                 <HoverBorderGradient
                   containerClassName="rounded-full"
                   as="button"
-                  className="dark:bg-black bg-white text-black dark:text-white flex items-center space-x-2"
+                  className="bg-gradient-to-br from-slate-100 to-slate-400 dark:from-slate-600 dark:bg-slate-900 dark:hover:from-slate-700 dark:hover:to-slate-950 dark:text-white flex items-center space-x-2 text-foreground/90 hover:text-foreground hover:from-slate-100 hover:to-slate-500"
                 >
                   <span>Let&apos;s Talk!✨</span>
                 </HoverBorderGradient>

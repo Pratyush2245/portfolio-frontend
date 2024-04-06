@@ -189,32 +189,32 @@ const ProjectDetails = ({
                   <TabsList className="text-[12px] h-auto px-0 py-1 md:gap-5 w-full justify-evenly">
                     <TabsTrigger
                       value="description"
-                      className="text-[10px] p-[6px] lg:text-[14px]"
+                      className="text-[12px] p-1 md:p-[6px] lg:text-[14px]"
                     >
                       Description
                     </TabsTrigger>
                     <TabsTrigger
                       value="links"
-                      className="text-[10px] p-[6px] lg:text-[14px]"
+                      className="text-[12px] p-1 md:p-[6px] lg:text-[14px]"
                     >
                       Source Code
                     </TabsTrigger>
                     <TabsTrigger
                       value="projectUrl"
-                      className="text-[10px] p-[6px] lg:text-[14px]"
+                      className="text-[12px] p-1 md:p-[6px] lg:text-[14px]"
                     >
                       Project URL
                     </TabsTrigger>
                     <TabsTrigger
                       value="reviews"
-                      className="text-[10px] p-[6px] lg:text-[14px]"
+                      className="text-[12px] p-1 md:p-[6px] lg:text-[14px]"
                     >
                       Reviews
                     </TabsTrigger>
                   </TabsList>
                   <div className="w-[90vw] xl:w-[60vw] mt-3 md:mt-6">
                     <TabsContent value="description">
-                      <div className="md:text-[14px] text-[10px]">
+                      <div className="md:text-[14px] text-[12px]">
                         {data?.description}
                       </div>
                     </TabsContent>

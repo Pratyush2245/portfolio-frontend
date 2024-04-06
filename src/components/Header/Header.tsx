@@ -110,7 +110,7 @@ const Header: React.FC<HeaderProps> = ({
   return (
     <>
       <header
-        className={`sticky top-0 right-0 p-4 flex items-center justify-between z-[999999] dark:bg-[#060d1d] bg-slate-100 transition-transform duration-300 ${show}`}
+        className={`sticky top-0 right-0 p-4 flex items-center justify-between z-[9999999] dark:bg-[#060d1d] bg-slate-100 transition-transform duration-300 ${show}`}
       >
         <div className="w-full flex items-center justify-between">
           <Link
@@ -177,7 +177,7 @@ const Header: React.FC<HeaderProps> = ({
               onClick={handleClose}
               id="screen"
             >
-              <div className="w-[70%] fixed h-screen bg-[#e7e1e16a] dark:bg-[#0e1116]/80 dark:bg-opacity-90 top-0 right-0 backdrop-blur-md">
+              <div className="w-[70%] fixed h-screen bg-[#e7e1e1c8] dark:bg-[#0e1116]/80 dark:bg-opacity-90 top-0 right-0 backdrop-blur-md">
                 <NavItems activeItem={activeItem} isMobile={true} />
                 <div className="flex md:hidden">
                   {userData ? (
