@@ -73,11 +73,12 @@ const Projects = (props: Props) => {
           </div>
           {projects && projects.length === 0 && (
             <p
-              className={`${styles.label} min-h-[50vh] flex flex-col justify-center items-center text-center gap-10`}
+              className={`${styles.label} min-h-[50vh] flex flex-col justify-center items-center text-center gap-10 mt-14`}
             >
               <MdOutlineSmsFailed className="h-[100px] w-[100px] md:h-[150px] md:w-[150px] text-muted-foreground/30" />
-              &quot;No projects found in this category. Please try another
-              one!&quot;
+              No projects found in this category.
+              <br />
+              Please try another one!
             </p>
           )}
           <br />

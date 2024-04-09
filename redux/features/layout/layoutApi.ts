@@ -19,7 +19,29 @@ export const layoutApi = apiSlice.injectEndpoints({
         credentials: "include" as const,
       }),
     }),
+    getCategoryData: builder.query({
+      query: () => ({
+        url: `get-blog-layout`,
+        method: "GET",
+        credentials: "include" as const,
+      }),
+    }),
+    editCategoryLayout: builder.mutation({
+      query: ({ categories }) => ({
+        url: `edit-blog-layout`,
+        method: "PUT",
+        body: {
+          categories,
+        },
+        credentials: "include" as const,
+      }),
+    }),
   }),
 });
 
-export const { useGetHeroDataQuery, useEditLayoutMutation } = layoutApi;
+export const {
+  useGetHeroDataQuery,
+  useEditLayoutMutation,
+  useGetCategoryDataQuery,
+  useEditCategoryLayoutMutation,
+} = layoutApi;

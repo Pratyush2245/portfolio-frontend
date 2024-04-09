@@ -140,7 +140,7 @@ const AllProjects = (props: Props) => {
     try {
       await deleteProject(projectId);
     } catch (error) {
-      console.error("Error deleting user:", error);
+      console.error("Error deleting project:", error);
     }
   };
 

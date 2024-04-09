@@ -1,29 +1,10 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { DataGrid } from "@mui/x-data-grid";
-import { Box, Button } from "@mui/material";
-import { AiOutlineDelete, AiOutlineMail } from "react-icons/ai";
+import { Box } from "@mui/material";
+import { AiOutlineMail } from "react-icons/ai";
 import { useTheme } from "next-themes";
-import { FileEditIcon } from "lucide-react";
-import {
-  useDeleteProjectMutation,
-  useGetAllProjectsLoginQuery,
-} from "../../../../redux/features/projects/projectApi";
 import CustomLoader from "../../../components/global/CustomLoader";
 import { format } from "timeago.js";
-import {
-  AlertDialog,
-  AlertDialogAction,
-  AlertDialogCancel,
-  AlertDialogContent,
-  AlertDialogDescription,
-  AlertDialogFooter,
-  AlertDialogHeader,
-  AlertDialogTitle,
-  AlertDialogTrigger,
-} from "@/components/ui/alert-dialog";
-import toast from "react-hot-toast";
-import Loading from "@/components/global/Loader";
-import Link from "next/link";
 import { useGetAllContactsQuery } from "../../../../redux/features/contacts/contactApi";
 
 type Props = {};

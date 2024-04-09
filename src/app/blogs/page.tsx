@@ -20,6 +20,7 @@ const Page: React.FC<Props> = (props) => {
         keywords="Full Stack Developer, Web Developer, Front End Developer, Back End Developer, MERN Stack Developer"
       />
       <div className="min-h-screen">
+        <div className="dark:hidden block absolute bottom-0 left-0 right-0 top-0 bg-[rgba(90,88,100,0.5)] opacity-50 blur-[80px]  [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_110%)]" />
         <Header
           open={open}
           setOpen={setOpen}
@@ -27,9 +28,9 @@ const Page: React.FC<Props> = (props) => {
           route={route}
           setRoute={setRoute}
         />
-        <Blogs />
-        <Footer />
+        <Blogs setOpen={setOpen} />
       </div>
+      <Footer />
     </div>
   );
 };

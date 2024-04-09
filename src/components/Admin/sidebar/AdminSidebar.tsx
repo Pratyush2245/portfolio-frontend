@@ -28,6 +28,7 @@ import { useSelector } from "react-redux";
 import Link from "next/link";
 import Image from "next/image";
 import { useTheme } from "next-themes";
+import { MdRequestPage } from "react-icons/md";
 
 interface itemProps {
   title: string;
@@ -241,6 +242,13 @@ const AdminSidebar = () => {
               title="All Messages"
               to="/admin/messages"
               icon={<ReceiptOutlinedIcon />}
+              selected={selected}
+              setSelected={setSelected}
+            />
+            <Item
+              title="All Requests"
+              to="/admin/requests"
+              icon={<MdRequestPage size={25} />}
               selected={selected}
               setSelected={setSelected}
             />

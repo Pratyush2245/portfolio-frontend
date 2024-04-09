@@ -43,6 +43,7 @@ import {
 import { Input } from "@/components/ui/input";
 import toast from "react-hot-toast";
 import Loading from "../../../components/global/Loader";
+import { cn } from "@/lib/utils/cn";
 
 type Props = {
   isTeam: boolean;
@@ -236,12 +237,15 @@ const AllUsers = ({ isTeam }: Props) => {
                         Add New Member
                       </DialogTitle>
                       <DialogDescription>
-                        <Input
-                          placeholder="Enter email..."
-                          value={emailData}
-                          onChange={(e: any) => setEmailData(e.target.value)}
-                          required
-                        />
+                        <LabelInputContainer>
+                          <Input
+                            placeholder="Enter email..."
+                            value={emailData}
+                            onChange={(e: any) => setEmailData(e.target.value)}
+                            required
+                            className="!bg-background"
+                          />
+                        </LabelInputContainer>
                         <Select
                           onValueChange={(e) => setRole(e)}
                           defaultValue={role}
@@ -252,6 +256,7 @@ const AllUsers = ({ isTeam }: Props) => {
                           <SelectContent>
                             <SelectItem value="user">User</SelectItem>
                             <SelectItem value="admin">Admin</SelectItem>
+                            <SelectItem value="writer">Writer</SelectItem>
                           </SelectContent>
                         </Select>
                       </DialogDescription>
@@ -327,6 +332,20 @@ const AllUsers = ({ isTeam }: Props) => {
         </div>
       )}
     </>
+  );
+};
+
+const LabelInputContainer = ({
+  children,
+  className,
+}: {
+  children: React.ReactNode;
+  className?: string;
+}) => {
+  return (
+    <div className={cn("flex flex-col space-y-2 w-full", className)}>
+      {children}
+    </div>
   );
 };
 

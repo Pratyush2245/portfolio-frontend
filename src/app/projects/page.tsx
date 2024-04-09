@@ -30,7 +30,7 @@ const Page: React.FC<Props> = (props) => {
           setRoute={setRoute}
         />
         <Projects />
-        <BackgroundBeams />
+        {/* <BackgroundBeams /> */}
       </div>
       <Footer />
     </div>

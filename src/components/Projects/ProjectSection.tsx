@@ -16,10 +16,10 @@ const ProjectSection = ({ projects }: Props) => {
           {projects.map((project: any, index: number) => (
             <BentoGridItem
               key={index}
-              id={project?._id}
               title={project.name}
               description={project.description}
-              header={""}
+              header={project.categories}
+              href={`/project/${project?._id}`}
               icon={
                 <Image
                   src={project?.projectThumbnail?.url}
@@ -27,10 +27,10 @@ const ProjectSection = ({ projects }: Props) => {
                   objectFit="cover"
                   width={400}
                   height={200}
-                  className="rounded-tl-md rounded-tr-md"
+                  className="rounded-md"
                 />
               }
-              className={`cursor-pointer ${
+              className={`cursor-pointer z-10 ${
                 index === 3 || index === 6
               } ? "md:col-span-2" : ""`}
             />

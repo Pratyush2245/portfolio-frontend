@@ -79,18 +79,20 @@ const Footer = ({ setOpen }: Props) => {
                   href={
                     "https://www.linkedin.com/in/pratyush-bhattacharya-9b2a30214"
                   }
+                  target="_blank"
                   className="md:text-base text-[14px] text-muted-foreground hover:text-foreground/80 flex items-center gap-2"
                 >
-                  <LinkedinIcon className="md:size-[14px] size-[10px] text-foreground/80" />
+                  <LinkedinIcon className="md:size-[14px] size-[10px] text-foreground/80 hover:transform hover:-rotate-12 hover:transition-all hover:duration-150" />
                   LinkedIn
                 </Link>
               </li>
               <li>
                 <Link
                   href={"https://github.com/PratyushBhattacharya123"}
+                  target="_blank"
                   className="md:text-base text-[14px] text-muted-foreground hover:text-foreground/80 flex items-center gap-2"
                 >
-                  <GithubIcon className="md:size-[14px] size-[10px] text-foreground/80" />
+                  <GithubIcon className="md:size-[14px] size-[10px] text-foreground/80 hover:transform hover:-rotate-12 hover:transition-all hover:duration-150" />
                   Github
                 </Link>
               </li>
@@ -99,9 +101,10 @@ const Footer = ({ setOpen }: Props) => {
                   href={
                     "https://www.instagram.com/pratyush.bhattacharya?igsh=cGdtY3dvbTdybHBl"
                   }
+                  target="_blank"
                   className="md:text-base text-[14px] text-muted-foreground hover:text-foreground/80 flex items-center gap-2"
                 >
-                  <InstagramIcon className="md:size-[14px] size-[10px] text-foreground/80" />
+                  <InstagramIcon className="md:size-[14px] size-[10px] text-foreground/80 hover:transform hover:-rotate-12 hover:transition-all hover:duration-150" />
                   Instagram
                 </Link>
               </li>

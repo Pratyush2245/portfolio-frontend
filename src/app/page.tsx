@@ -7,6 +7,7 @@ import HomePage from "@/components/HomePage/HomePage";
 import { HeroParallaxDemo } from "../components/HomePage/Parallax";
 import Skills from "../components/HomePage/Skills";
 import Footer from "../components/Footer/Footer";
+import StaticReview from "../components/HomePage/StaticReview";
 
 type Props = {};
 
@@ -32,9 +33,9 @@ const Page = (props: Props) => {
       <HomePage />
       <Skills />
       <HeroParallaxDemo />
-      <div className="mt-20">
-        <Footer />
-      </div>
+      <StaticReview />
+      <Footer />
+      {/* <div className="mt-20"></div> */}
     </div>
   );
 };

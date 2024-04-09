@@ -143,8 +143,6 @@ const ProjectDetails = ({
     }
   }, [reviewError, reviewReplyError, reviewReplySuccess, reviewSuccess]);
 
-  console.log(data);
-
   return (
     <>
       {isLoading || fullLoading || userLoading ? (
@@ -155,7 +153,7 @@ const ProjectDetails = ({
           {/* <TracingBeam className="px-6"> */}
           <div className="max-w-4xl mx-auto antialiased pt-4 relative flex flex-col items-center justify-center">
             <div className="mb-10 mx- flex flex-col items-start ml-5 md:ml-10 lg:ml-0">
-              <Button className="h-[35px] border-none z-[1000000]dark:bg-transparent bg-slate-100/10 text-black dark:text-white px-4 rounded-[30px] flex items-center justify-center font-Poppins cursor-pointer w-auto py-1">
+              <Button className="h-[35px] border-none z-[1000000] dark:bg-transparent bg-slate-100/10 text-black dark:text-white px-4 rounded-[30px] flex items-center justify-center font-Poppins cursor-pointer w-auto py-1">
                 {data?.categories}
               </Button>
 
@@ -177,7 +175,7 @@ const ProjectDetails = ({
                   alt="Thumbnail"
                   width={1000}
                   height={500}
-                  className="w-full h-auto lg:rounded-3xl md:rounded-2xl rounded-xl z-[100000]"
+                  className="w-full h-auto lg:rounded-3xl md:rounded-2xl rounded-xl z-10"
                 />
               </a>
 
@@ -312,6 +310,8 @@ const ProjectDetails = ({
                                     : defaultAvatar
                                 }
                                 alt=""
+                                width={50}
+                                height={50}
                                 className="md:w-[50px] md:h-[50px] w-[40px] h-[40px] rounded-full object-cover"
                               />
                               <div className="w-full">
@@ -379,6 +379,8 @@ const ProjectDetails = ({
                                           : defaultAvatar
                                       }
                                       alt=""
+                                      width={40}
+                                      height={40}
                                       className="md:w-[40px] md:h-[40px] w-[35px] h-[35px] rounded-full object-fit"
                                     />
                                   </div>
@@ -432,6 +434,8 @@ const ProjectDetails = ({
                                                   : defaultAvatar
                                               }
                                               alt=""
+                                              width={40}
+                                              height={40}
                                               className="md:w-[40px] md:h-[40px] w-[35px] h-[35px] rounded-full object-fit"
                                             />
                                           </div>
@@ -476,6 +480,8 @@ const ProjectDetails = ({
                                             : defaultAvatar
                                         }
                                         alt=""
+                                        width={40}
+                                        height={40}
                                         className="md:w-[40px] md:h-[40px] w-[35px] h-[35px] rounded-full object-fit"
                                       />
                                     </div>
@@ -530,6 +536,8 @@ const ProjectDetails = ({
                                                       : defaultAvatar
                                                   }
                                                   alt=""
+                                                  height={40}
+                                                  width={40}
                                                   className="md:w-[40px] md:h-[40px] w-[35px] h-[35px] rounded-full object-fit"
                                                 />
                                               </div>

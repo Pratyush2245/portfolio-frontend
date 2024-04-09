@@ -1,13 +1,14 @@
 import React from "react";
-import { BackgroundBeams } from "../ui/background-beams";
 import Image from "next/image";
 import { HoverBorderGradient } from "../ui/hover-border-gradient";
 import { TypewriterEffectSmooth } from "../ui/typewriter-effect";
 import { words } from "@/lib/utils/constants";
 import ProfilePic from "../../../public/Profile_Pic.png";
+import { GlowingStarsBackgroundCard } from "../ui/glowing-stars";
 
 const HomePage = ({}) => {
   return (
+    // <GlowingStarsBackgroundCard className="!bg-transparent">
     <div>
       <div className="dark:hidden block absolute bottom-0 left-0 right-0 top-0 bg-[rgba(90,88,100,0.5)] opacity-50 blur-[80px]  [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_110%)]" />
       <div className="w-full h-full flex items-center -mt-10 flex-col lg:flex-row">
@@ -73,8 +74,8 @@ const HomePage = ({}) => {
         <div className="absolute bottom-0 top-0 bg-gradient-to-r dark:from-purple-800 dark:to-purple-900 opacity-20 left-[60%] right-[30px] blur-[80px] z-10 rounded-full lg:flex hidden" />
         <div className="absolute bottom-[80%] top-0 bg-gradient-to-t dark:from-purple-500 dark:to-purple-600 opacity-10 blur-3xl left-0 right-0 z-10" />
       </div>
-      <BackgroundBeams />
     </div>
+    // </GlowingStarsBackgroundCard>
   );
 };
 

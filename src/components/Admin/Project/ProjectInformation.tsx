@@ -14,13 +14,13 @@ import { cn } from "@/lib/utils/cn";
 
 interface ProjectInformationProps {
   projectInfo: any;
-  setProjectInfo: (courseInfo: any) => void;
+  setProjectInfo: (projectInfo: any) => void;
   handleCreateProject: any;
   isLoading: boolean;
   isEdit: boolean;
 }
 
-const CourseInformation: React.FC<ProjectInformationProps> = ({
+const ProjectInformation: React.FC<ProjectInformationProps> = ({
   projectInfo,
   setProjectInfo,
   handleCreateProject,
@@ -190,7 +190,7 @@ const CourseInformation: React.FC<ProjectInformationProps> = ({
                 </LabelInputContainer>
               </div>
               <div className="w-[50%]">
-                <Label htmlFor="projectCategories">Project Categories</Label>
+                <Label htmlFor="projectCategories">Project Category</Label>
                 <select
                   onChange={handleCategoryChange}
                   value={projectInfo.categories}
@@ -360,4 +360,4 @@ const LabelInputContainer = ({
   );
 };
 
-export default CourseInformation;
+export default ProjectInformation;
